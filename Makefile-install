@@ -1,0 +1,8 @@
+#Para tornar permanente a instalacao do driver de wifi:
+
+
+all:
+	sudo cp 8188eu.ko /lib/modules/4.19.14-1-MANJARO/kernel/drivers/wireless
+	sudo depmod -a
+	sudo insmod 8188eu.ko	
+	
